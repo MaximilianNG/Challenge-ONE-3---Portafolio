@@ -123,6 +123,14 @@
   background-color:khaki
 }
 
+.fotoDePerfil {
+  max-width: 80vw
+}
+
+.links {
+  display: flex
+}
+
 .skills {
   background-color:darkgreen
 }
