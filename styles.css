@@ -188,9 +188,56 @@
 
 /*----Segmento de las skills-----*/
 .skills {
-  background-color:darkgreen
+  display: flex;
+  flex-direction: column;
+  background-color: #F5F5F5;
+  padding: 1rem 0.4rem;
+  align-items: center;
+  gap: 1.5rem;
 }
 
+.skills__subtítulo {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.skills__cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 95vw;
+  justify-content: space-evenly;
+  row-gap: 1.7rem;
+  column-gap: 0.4rem;
+}
+
+.skills__card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  background-color: white;
+  width: 45vw;
+  padding: 3rem 0.5rem 0.4rem 1.5rem;
+  flex-basis: 35vw;
+}
+
+.card__icon {
+  font-size: 2.5rem;
+  color: #2A7AE4;
+}
+
+.card__skill {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+
+
+
+/*----Segmento de Hobbies----*/
 .hobbies {
   background-color:brown
 }
