@@ -163,17 +163,46 @@
             </div>
         </div>
         <div class="proyectos__card">
-            <img class="proyectos__imagen" src="./proyectoEncriptador.png">
+            <img class="proyectos__imagen" src="./proyectoAhorcado.png">
             <p class="raleway700 proyectos__nombreDeProyecto">Juego "Ahorcado" creado con<br> HTML, CSS y Javascript</p>
             <p class="raleway400 proyectos__descripción">Desafío de Oracle Next Education</p>
             <div class="proyectos__botones">
-                <button class="raleway700 proyectos__botónRepo">Repositorio</button>
-                <button class="raleway700 proyectos__botónPages">Ver demo</button>
+                <a class="raleway700 proyectos__botónRepo" href="https://github.com/MaximilianNG/Challenge-ONE-JuegoDelAhorcado"
+                target="_blank">Repositorio</a>
+                <a class="raleway700 proyectos__botónPages" href="https://maximilianng.github.io/Challenge-ONE-JuegoDelAhorcado/"
+                target="_blank">Ver demo</a>
             </div>
         </div>
     </section>
     <section class="contacto">
-        6
+        <h2 class="raleway700 contacto__subtítulo">Contacto</h2>
+        <p class="raleway400 contacto__indicaciones">Para contactarse conmigo complete el siguiente
+            formulario y me comunicaré con usted lo antes posible.
+        </p>
+        <form class="contacto__form">
+            <div class="form__inputGroup">
+                <input class="contacto__form--input" type="text" id="nombre">
+                <label class="raleway400 form__label" for="nombre">
+                    <i class="fa-solid fa-user"></i> Nombre</label>
+            </div>
+            <div class="form__inputGroup">
+                <input class="contacto__form--input" type="email" id="email">
+                <label class="raleway400 form__label" for="email">
+                    <i class="fa-solid fa-envelope"></i> Email</label>
+            </div>
+            <div class="form__inputGroup">
+                <input class="contacto__form--input" type="text" id="asunto">
+                <label class="raleway400 form__label" for="asunto">
+                    <i class="fa-solid fa-pen"></i> Asunto</label>
+            </div>
+            <div class="form__inputGroup">
+                <textarea class="contacto__form--input contacto__form--area" type="text"
+            id="mensaje"></textarea>
+                <label class="raleway400 form__label" for="mensaje">
+                    <i class="fa-solid fa-message"></i> Mensaje</label>
+            </div>
+            <button class="contacto__form--botón" type="submit">Enviar mensaje</button>
+        </form>
     </section>
     <footer class="footer">
         7
