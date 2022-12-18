@@ -33,11 +33,11 @@
         <div class='menu-button'></div>
       </label>
         <ul class="menu">
-          <li>Sobre mí</li>
-          <li>Skills</li>
-          <li>Hobbies</li>
-          <li>Formación</li>
-          <li>Proyectos</li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#hobbies">Hobbies</a></li>
+          <li><a href="#formación">Formación</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
     </section>
 
@@ -50,9 +50,9 @@
             Silicon Misiones.
         </p>
         <ul class="links">
-            <li><a>GitHub↗</a></li>
-            <li><a>Linkedin↗</a></li>
-            <li><a>Currículum Vitae↗</a></li>
+            <li><a href="" class="sobreMí__link">GitHub↗</a></li>
+            <li><a href="" class="sobreMí__link">Linkedin↗</a></li>
+            <li><a href="" class="sobreMí__link">Currículum Vitae↗</a></li>
         </ul>
         </article>
         <article class="sobreMí__síntesis fondoCeleste">
@@ -68,7 +68,7 @@
             </p>
         </article>
     </section>
-    <section class="skills">
+    <section class="skills" id="skills">
         <h2 class="raleway700 skills__subtítulo">Skills</h2>
         <div class="skills__cardsContainer">
             <div class="skills__card">
@@ -105,7 +105,7 @@
             </div>
         </div>
     </section>
-    <section class="hobbies">
+    <section class="hobbies" id="hobbies">
         <h2 class="raleway700 skills__subtítulo">Hobbies</h2>
         <div class="skills__cardsContainer">
             <div class="skills__card">
@@ -126,7 +126,7 @@
             </div>
         </div>
     </section>
-    <section class="formacion">
+    <section class="formacion" id="formación">
         <h2 class="raleway700 formacion__subtítulo">Formación Académica</h2>
         <div class="formacion__card">
             <div class="card__logoContainer"><img class="logo__Alura" src="./logoAlura.png"></div>
@@ -149,7 +149,7 @@
             <p class="raleway400 card__períodoEInstitución">2017 - Universidad Nacional<br> de Misiones</p>
         </div>
     </section>
-    <section class="proyectos">
+    <section class="proyectos" id="proyectos">
         <h2 class="raleway700 proyectos__subtítulo">Proyectos</h2>
         <div class="proyectos__card">
             <img class="proyectos__imagen" src="./proyectoEncriptador.png">
@@ -174,38 +174,40 @@
             </div>
         </div>
     </section>
-    <section class="contacto">
+    <section class="contacto" id="contacto">
         <h2 class="raleway700 contacto__subtítulo">Contacto</h2>
         <p class="raleway400 contacto__indicaciones">Para contactarse conmigo complete el siguiente
             formulario y me comunicaré con usted lo antes posible.
         </p>
         <form class="contacto__form">
             <div class="form__inputGroup">
-                <input class="contacto__form--input" type="text" id="nombre">
+                <input class="contacto__form--input" type="text" id="nombre" required>
                 <label class="raleway400 form__label" for="nombre">
                     <i class="fa-solid fa-user"></i> Nombre</label>
             </div>
             <div class="form__inputGroup">
-                <input class="contacto__form--input" type="email" id="email">
+                <input class="contacto__form--input" type="email" id="email" required title="Tu correo debe coincidir con el formato ejemplo@ejemplo.com">
                 <label class="raleway400 form__label" for="email">
                     <i class="fa-solid fa-envelope"></i> Email</label>
             </div>
             <div class="form__inputGroup">
-                <input class="contacto__form--input" type="text" id="asunto">
+                <input class="contacto__form--input" type="text" id="asunto" required>
                 <label class="raleway400 form__label" for="asunto">
                     <i class="fa-solid fa-pen"></i> Asunto</label>
             </div>
             <div class="form__inputGroup">
                 <textarea class="contacto__form--input contacto__form--area" type="text"
-            id="mensaje"></textarea>
+            id="mensaje" required></textarea>
                 <label class="raleway400 form__label" for="mensaje">
                     <i class="fa-solid fa-message"></i> Mensaje</label>
             </div>
-            <button class="contacto__form--botón" type="submit">Enviar mensaje</button>
+            <button class="raleway700 contacto__form--botón" type="submit">Enviar mensaje</button>
         </form>
     </section>
     <footer class="footer">
         7
     </footer>
+
+    <script src="./validations.js"></script>
 </body>
 </html>
