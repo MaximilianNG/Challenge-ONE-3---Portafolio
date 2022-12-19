@@ -221,7 +221,7 @@ a {
 .skills__cardsContainer {
   display: flex;
   flex-wrap: wrap;
-  width: 95vw;
+  width: 96vw;
   justify-content: space-evenly;
   row-gap: 1.7rem;
   column-gap: 0.4rem;
@@ -243,7 +243,22 @@ a {
 }
 
 .card__skill {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+}
+
+/*------Segmento de las soft skills------*/
+.softSkills {
+  display: flex;
+  flex-direction: column;
+  background-color: #F5F5F5;
+  padding: 1rem 0.4rem;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.card__icon--soft {
+  font-size: 2.5rem;
+  color: #1f6119;
 }
 
 
