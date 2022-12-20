@@ -77,7 +77,7 @@
     .proyectos__card {
         display: flex;
         flex-direction: row;
-        gap: 0.4rem;
+        gap: 1rem;
         max-width: 80vw;
     }
 
