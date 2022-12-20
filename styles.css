@@ -154,9 +154,17 @@ a {
 }
 
 .fotoDePerfil {
-  max-width: 75vw;
+  align-self: flex-start;
+  max-width: 35vw;
+  max-height: 35vh;
   border-radius: 50%;
   border: solid 1px black;
+}
+
+.firma {
+  align-self: flex-start;
+  max-width: 25vw;
+  max-height: 12vh;
 }
 
 .links {
@@ -165,6 +173,7 @@ a {
   justify-content: space-around;
   width: 90vw;
   align-self: flex-start;
+  text-shadow: 0 0 0.3em rgb(199, 182, 97);
 }
 
 .sobreMí__link {
@@ -209,7 +218,7 @@ a {
   display: flex;
   flex-direction: column;
   background-color: #F5F5F5;
-  padding: 1rem 0.4rem;
+  padding: 1.3rem;
   align-items: center;
   gap: 1.5rem;
 }
@@ -251,7 +260,7 @@ a {
   display: flex;
   flex-direction: column;
   background-color: #F5F5F5;
-  padding: 1rem 0.4rem;
+  padding: 1.3rem;
   align-items: center;
   gap: 1.5rem;
 }
@@ -267,7 +276,7 @@ a {
   display: flex;
   flex-direction: column;
   background-color: #F5F5F5;
-  padding: 1rem 0.4rem;
+  padding: 1.3rem;
   align-items: center;
   gap: 1.5rem;
 }
@@ -284,7 +293,7 @@ a {
   display: flex;
   flex-direction: column;
   background-color: #EAF2FD;
-  padding: 1rem 0.4rem;
+  padding: 1.3rem 1rem;
   align-items: center;
   gap: 1.8rem;
 }
@@ -348,7 +357,7 @@ a {
   padding: 1rem 0.4rem;
   align-items: center;
   gap: 1.5rem;
-  padding: 0.4rem 1rem;
+  padding: 1.2rem 1rem;
 }
 
 .proyectos__subtítulo {
@@ -508,5 +517,6 @@ a {
 
 /*----Segmento de footer----*/
 .footer {
-  background-color: rgb(177, 40, 69)
+  text-align: center;
+  background-color:#F5F5F5;
 }
