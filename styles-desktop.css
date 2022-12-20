@@ -1,0 +1,83 @@
+/*Configuración para laptops y desktops*/
+@media only screen and (min-width: 992px) {
+    .sobreMí__síntesis {
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      padding: 2rem 0;
+      max-width: 80vw;
+    }
+  
+    .síntesis__textoYLinks {
+        max-width: 50vw;
+    }
+
+    .sobreMí__síntesis__texto1 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+  
+    .fotoDePerfil {
+      max-width: 18vw;
+      max-height: 30vh;
+      align-self: center;
+    }
+
+    .sobreMí__síntesis2 {
+        min-width: 96vw;
+    }
+
+    .síntesisContainer {
+        display: flex;
+        flex-direction: column;
+        max-width: 70vw;
+        gap: 0.5rem;
+    }
+
+    .sobreMí__detalle__texto {
+        line-height: 1.3rem;
+    }
+
+    .sobreMí__subtítulo {
+        color: #464646;
+        font-size: 1.5rem;
+        line-height: 26px;
+        padding-top: 1.5rem;
+      }
+
+    .skills__card--desktop {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+        background-color: white;
+        padding: 2.5rem 1rem 0.4rem 1.5rem;
+        flex-basis: 12vw;
+      }
+    
+    .card__logoContainer {
+      min-width: 22vw;
+      max-width: 22vw;
+
+      flex-basis: 23vw;
+    }
+
+    .proyectos__card {
+        display: flex;
+        flex-direction: row;
+        gap: 0.4rem;
+        max-width: 80vw;
+    }
+
+    .impar {
+        flex-direction: row-reverse;
+    }
+
+    .proyectos__imagen {
+        max-width: 55vw;
+    }
+
+    .proyectosCardDesktop {
+        align-self: center;
+    }
+}

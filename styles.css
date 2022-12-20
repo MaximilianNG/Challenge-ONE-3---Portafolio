@@ -20,6 +20,7 @@ medio tarde.*/
 a {
   color: white;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .top-nav {
@@ -186,6 +187,8 @@ a {
   width: 90vw;
   align-self: flex-start;
   text-shadow: 0 0 0.3em rgb(199, 182, 97);
+  padding-top: 0.5rem;
+  cursor: pointer;
 }
 
 .sobreMí__link {
@@ -322,6 +325,12 @@ a {
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
+}
+
+.formaciónContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .card__logoContainer {
