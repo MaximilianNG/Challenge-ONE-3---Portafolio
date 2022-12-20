@@ -25,7 +25,6 @@
       max-width: fit-content;
       font-size: 1rem;
       justify-content: space-around;
-      text-shadow: 0 0 0.3em rgb(199, 182, 97);
       padding-top: 0.6rem;
     }
   
@@ -40,7 +39,7 @@
     .skills__cardsContainer {
       display: flex;
       flex-wrap: wrap;
-      width: 96vw;
+      width: 80vw;
       justify-content: space-evenly;
       row-gap: 1.7rem;
       column-gap: 0.4rem;
@@ -51,9 +50,9 @@
       flex-direction: column;
       gap: 0.8rem;
       background-color: white;
-      width: 30vw;
-      padding: 3rem 1rem 0.4rem 1.5rem;
-      flex-basis: 22vw;
+      width: 22vw;
+      padding: 3rem 1rem 1.5rem 1.5rem;
+      flex-basis: 19vw;
     }
   
     .skills__card--backup {
@@ -61,9 +60,9 @@
       flex-direction: column;
       gap: 0.8rem;
       background-color: white;
-      width: 45vw;
+      width: 22vw;
       padding: 3rem 1rem 0.4rem 1.5rem;
-      flex-basis: 22vw;
+      flex-basis: 19vw;
     }
 
     /*SECTOR DE FORMACIÓN*/
@@ -73,11 +72,12 @@
           gap: 1rem;
           flex-wrap: wrap;
           justify-content: center;
+          max-width: 80vw;
       }
       
       .card__logoContainer {
-        min-width: 40vw;
-        max-width: 40vw;
+        min-width: 35vw;
+        max-width: 35vw;
         min-height: 7.3rem;
         max-height: 7.3rem;
         flex-basis: 45vw;

@@ -44,22 +44,34 @@
         font-size: 1.5rem;
         line-height: 26px;
         padding-top: 1.5rem;
-      }
+    }
+
+    .skills__cardsContainer {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80vw;
+        justify-content: space-evenly;
+        row-gap: 1.7rem;
+        column-gap: 0.4rem;
+    }
 
     .skills__card--desktop {
         display: flex;
         flex-direction: column;
         gap: 0.3rem;
         background-color: white;
-        padding: 2.5rem 1rem 0.4rem 1.5rem;
-        flex-basis: 12vw;
+        padding: 2.5rem 0.7rem 0.6rem 1.2rem;
+        flex-basis: 10vw;
       }
     
     .card__logoContainer {
-      min-width: 22vw;
-      max-width: 22vw;
+      min-width: 19vw;
+      max-width: 19vw;
+      flex-basis: 19vw;
+    }
 
-      flex-basis: 23vw;
+    .formacion {
+        padding-top: 2rem;
     }
 
     .proyectos__card {
@@ -80,4 +92,30 @@
     .proyectosCardDesktop {
         align-self: center;
     }
+
+    .contactoContainer {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contacto__imagen {
+        display: flex;
+        max-width: 45vw;
+        max-height: 60vh;
+    }
+
+    .contacto__form {
+        max-width: 45vw;
+    }
+
+    .contacto__form--input {
+        width: 45vw;
+        border-radius: 4px;
+        height: 2rem;
+        border-style: none;
+        box-shadow: 0px 4px 0px -2px #C8C8C8;
+        transition: 0.3s;
+      }
 }

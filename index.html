@@ -230,35 +230,40 @@
         </div>
     </section>
     <section class="contacto" id="contacto">
-        <h2 class="raleway700 contacto__subtítulo">Contacto</h2>
-        <p class="raleway400 contacto__indicaciones">Para contactarse conmigo complete el siguiente
-            formulario y me comunicaré con usted lo antes posible.
-        </p>
-        <form class="contacto__form" action="https://formsubmit.co/maximilianogamon@gmail.com" method="POST">
-            <div class="form__inputGroup">
-                <input class="contacto__form--input" type="text" id="nombre" required maxlength="50">
-                <label class="raleway400 form__label" for="nombre">
-                    <i class="fa-solid fa-user"></i> Nombre</label>
+        <div class="contactoContainer">
+            <img src="./contactoImagen.png" class="contacto__imagen">
+            <div class="formContainer">
+                <h2 class="raleway700 contacto__subtítulo">Contacto</h2>
+            <p class="raleway400 contacto__indicaciones">Para contactarse conmigo complete el siguiente
+                formulario y me comunicaré con usted lo antes posible.
+            </p>
+            <form class="contacto__form" action="https://formsubmit.co/maximilianogamon@gmail.com" method="POST">
+                <div class="form__inputGroup">
+                    <input class="contacto__form--input" type="text" id="nombre" required maxlength="50">
+                    <label class="raleway400 form__label" for="nombre">
+                        <i class="fa-solid fa-user"></i> Nombre</label>
+                </div>
+                <div class="form__inputGroup">
+                    <input class="contacto__form--input" type="email" id="email" required name="email">
+                    <label class="raleway400 form__label" for="email" id="emailLabel">
+                        <i class="fa-solid fa-envelope"></i> Email</label>
+                </div>
+                <div class="form__inputGroup">
+                    <input class="contacto__form--input" type="text" id="asunto" required maxlength="50" name="_subject">
+                    <label class="raleway400 form__label" for="asunto">
+                        <i class="fa-solid fa-pen"></i> Asunto</label>
+                </div>
+                <div class="form__inputGroup">
+                    <textarea class="contacto__form--input contacto__form--area" type="text"
+                id="mensaje" required maxlength="300"  name="name"></textarea>
+                    <label class="raleway400 form__label" for="mensaje">
+                        <i class="fa-solid fa-message"></i> Mensaje</label>
+                </div>
+                <button class="raleway700 contacto__form--botón" type="submit" disabled
+                id="submitBotón">Enviar mensaje</button>
+            </form>
             </div>
-            <div class="form__inputGroup">
-                <input class="contacto__form--input" type="email" id="email" required name="email">
-                <label class="raleway400 form__label" for="email" id="emailLabel">
-                    <i class="fa-solid fa-envelope"></i> Email</label>
-            </div>
-            <div class="form__inputGroup">
-                <input class="contacto__form--input" type="text" id="asunto" required maxlength="50" name="_subject">
-                <label class="raleway400 form__label" for="asunto">
-                    <i class="fa-solid fa-pen"></i> Asunto</label>
-            </div>
-            <div class="form__inputGroup">
-                <textarea class="contacto__form--input contacto__form--area" type="text"
-            id="mensaje" required maxlength="300"  name="name"></textarea>
-                <label class="raleway400 form__label" for="mensaje">
-                    <i class="fa-solid fa-message"></i> Mensaje</label>
-            </div>
-            <button class="raleway700 contacto__form--botón" type="submit" disabled
-            id="submitBotón">Enviar mensaje</button>
-        </form>
+        </div>
     </section>
     <footer class="footer">
         <p class="raleway400">Desarrollado por Max <br>

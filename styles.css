@@ -186,13 +186,12 @@ a {
   justify-content: space-around;
   width: 90vw;
   align-self: flex-start;
-  text-shadow: 0 0 0.3em rgb(199, 182, 97);
   padding-top: 0.5rem;
   cursor: pointer;
 }
 
 .sobreMí__link {
-  color: black
+  color: rgb(135, 16, 16)
 }
 
 .sobreMí__síntesis__texto1{
@@ -256,9 +255,9 @@ a {
   flex-direction: column;
   gap: 0.8rem;
   background-color: white;
-  width: 45vw;
-  padding: 3rem 1rem 0.4rem 1.5rem;
-  flex-basis: 35vw;
+  width: 40vw;
+  padding: 3rem 1rem 1.5rem 1.5rem;
+  flex-basis: 32vw;
 }
 
 .skills__card--backup {
@@ -312,7 +311,7 @@ a {
   display: flex;
   flex-direction: column;
   background-color: #EAF2FD;
-  padding: 1.3rem 1rem;
+  padding: 2rem 2rem;
   align-items: center;
   gap: 1.8rem;
 }
@@ -382,7 +381,7 @@ a {
   padding: 1rem 0.4rem;
   align-items: center;
   gap: 1.5rem;
-  padding: 1.2rem 1rem;
+  padding: 2rem 2rem;
 }
 
 .proyectos__subtítulo {
@@ -393,11 +392,12 @@ a {
 .proyectos__card {
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
+  gap: 1rem;
 }
 
 .proyectos__imagen {
   max-width: 85vw;
+  box-shadow: 5px 2px 10px #333;
 }
 
 .proyectos__nombreDeProyecto {
@@ -451,7 +451,7 @@ a {
   display: flex;
   flex-direction: column;
   background-color: #EAF2FD;
-  padding: 1.3rem;
+  padding: 2rem;
 }
 
 .contacto__subtítulo {
@@ -466,6 +466,10 @@ a {
   line-height: 19px;
   color: #464646;
   padding-bottom: 1.6rem;
+}
+
+.contacto__imagen {
+  display: none;
 }
 
 .contacto__form {
