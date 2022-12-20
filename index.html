@@ -199,29 +199,30 @@
         <p class="raleway400 contacto__indicaciones">Para contactarse conmigo complete el siguiente
             formulario y me comunicaré con usted lo antes posible.
         </p>
-        <form class="contacto__form">
+        <form class="contacto__form" action="https://formsubmit.co/062aaa435bf82aef9e829c85bf295b02" method="POST">
             <div class="form__inputGroup">
-                <input class="contacto__form--input" type="text" id="nombre" required>
+                <input class="contacto__form--input" type="text" id="nombre" required maxlength="50">
                 <label class="raleway400 form__label" for="nombre">
                     <i class="fa-solid fa-user"></i> Nombre</label>
             </div>
             <div class="form__inputGroup">
-                <input class="contacto__form--input" type="email" id="email" required title="Tu correo debe coincidir con el formato ejemplo@ejemplo.com">
-                <label class="raleway400 form__label" for="email">
+                <input class="contacto__form--input" type="email" id="email" required name="email">
+                <label class="raleway400 form__label" for="email" id="emailLabel">
                     <i class="fa-solid fa-envelope"></i> Email</label>
             </div>
             <div class="form__inputGroup">
-                <input class="contacto__form--input" type="text" id="asunto" required>
+                <input class="contacto__form--input" type="text" id="asunto" required maxlength="50" name="_subject">
                 <label class="raleway400 form__label" for="asunto">
                     <i class="fa-solid fa-pen"></i> Asunto</label>
             </div>
             <div class="form__inputGroup">
                 <textarea class="contacto__form--input contacto__form--area" type="text"
-            id="mensaje" required></textarea>
+            id="mensaje" required maxlength="300"  name="name"></textarea>
                 <label class="raleway400 form__label" for="mensaje">
                     <i class="fa-solid fa-message"></i> Mensaje</label>
             </div>
-            <button class="raleway700 contacto__form--botón" type="submit">Enviar mensaje</button>
+            <button class="raleway700 contacto__form--botón" type="submit" disabled
+            id="submitBotón">Enviar mensaje</button>
         </form>
     </section>
     <footer class="footer">

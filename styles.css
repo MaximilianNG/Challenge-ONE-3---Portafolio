@@ -277,7 +277,7 @@ a {
   color: #f96e9e;
 }
 
-/*El resto de los estilos de hobbies es igual al apartado de skills*/
+/*El resto de los estilos de hobbies y soft skills es igual al apartado de skills*/
 
 /*----Segmento de formación académica----*/
 .formacion {
@@ -473,14 +473,20 @@ a {
 }
 
 .contacto__form--input:focus~.form__label,
-.contacto__form--input:valid~.form__label,
-.contacto__form--input:checked~.form__label {
+.contacto__form--input:valid~.form__label {
   top: -1.7rem;
   font-size: 0.8rem;
 }
 
+.test {
+  top: -1.7rem;
+  font-size: 0.8rem;
+  color: red
+}
+
 .contacto__form--area {
   height: 5rem;
+  resize: none;
 }
 
 .contacto__form--botón {
@@ -491,6 +497,13 @@ a {
   line-height: 16px;
   height: 3rem;
   max-width: 10rem;
+  transition: 0.3s;
+}
+
+.contacto__form--botón:disabled {
+  background-color: #A2A2A2;
+  border-color: #A2A2A2;
+  transition: 0.3s;
 }
 
 /*----Segmento de footer----*/
