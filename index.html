@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-tablets.css">
 
     <!--Importamos la fuente Raleway-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,29 +32,31 @@
         <div class='menu-button'></div>
       </label>
         <ul class="menu">
-          <li><a href="#skills" class="raleway400">Skills</a></li>
-          <li><a href="#hobbies" class="raleway400">Hobbies</a></li>
-          <li><a href="#formación" class="raleway400">Formación</a></li>
-          <li><a href="#proyectos" class="raleway400">Proyectos</a></li>
-          <li><a href="#contacto" class="raleway400">Contacto</a></li>
+          <li><a class="raleway400" id="navSkills">Skills</a></li>
+          <li><a class="raleway400" id="navHobbies">Hobbies</a></li>
+          <li><a class="raleway400" id="navFormación">Formación</a></li>
+          <li><a class="raleway400" id="navProyectos">Proyectos</a></li>
+          <li><a class="raleway400" id="navContacto">Contacto</a></li>
         </ul>
     </section>
 
     <section class="sobreMí">
         <article class="sobreMí__síntesis">
-        <img class="fotoDePerfil" src="./fotoDePerfil.png" alt="Foto de perfil">
-        <p class="raleway700 sobreMí__síntesis__texto1">Hola, mi nombre es Maximiliano Gamón y construyo páginas web</p>
-        <p class="raleway400 sobreMí__síntesis__texto2">Soy licenciado en letras y desarrollador web, actualmente participando
-            en el proyecto de Oracle ONE en Alura Latam y formándome junto a 
-            Silicon Misiones.<br><br>Contacto: maximilianogamon@gmail.com o a través de <a style="color: darkcyan" href="#contacto">este formulario</a>.
-        </p>
-        <ul class="links">
-            <li><a href="https://github.com/MaximilianNG/MaximilianNG" target="_blank" class="sobreMí__link raleway400">GitHub↗</a></li>
-            <li><a href="https://www.linkedin.com/in/dev-maximiliano-gamon/" target="_blank" class="sobreMí__link raleway400">Linkedin↗</a></li>
-            <li><a href="./CV.pdf" download="Maximiliano Gamón - CV" target="_blank" class="sobreMí__link raleway400">Currículum Vitae↗</a></li>
-        </ul>
+            <img class="fotoDePerfil" src="./fotoDePerfil.png" alt="Foto de perfil">
+            <div class="síntesis__textoYLinks">
+                <p class="raleway700 sobreMí__síntesis__texto1">Hola, mi nombre es Maximiliano Gamón y construyo páginas web</p>
+                <p class="raleway400 sobreMí__síntesis__texto2">Soy licenciado en letras y desarrollador web, actualmente participando
+                    en el proyecto de Oracle Next Education y formándome junto a 
+                    Silicon Misiones.<br><br>Contacto: maximilianogamon@gmail.com o a través de <a style="color: darkcyan" href="#contacto">este formulario</a>.
+                </p>
+                <ul class="links">
+                    <li><a href="https://github.com/MaximilianNG/MaximilianNG" target="_blank" class="sobreMí__link raleway400">GitHub↗</a></li>
+                    <li><a href="https://www.linkedin.com/in/dev-maximiliano-gamon/" target="_blank" class="sobreMí__link raleway400">Linkedin↗</a></li>
+                    <li><a href="./CV.pdf" download="Maximiliano Gamón - CV" target="_blank" class="sobreMí__link raleway400">Currículum Vitae↗</a></li>
+                </ul>
+            </div>
         </article>
-        <article class="sobreMí__síntesis fondoCeleste">
+        <article class="sobreMí__síntesis2 fondoCeleste">
             <h2 class="raleway700 sobreMí__subtítulo">Sobre mí</h2>
             <p class="raleway400 sobreMí__detalle__texto">Nací en 1992 en Posadas, Misiones, Argentina, y siempre fui un apasionado de todo lo que
                 sea computadoras y tecnología. Comencé a formarme en desarrollo web mientras trabajaba como
@@ -102,6 +105,11 @@
                 <i class="card__icon fa-solid fa-arrows-split-up-and-left"></i>
                 <p class="raleway700 card__skill">Scrum</p>
             </div>
+            <div class="skills__card--backup">
+                <i class="card__icon fa-solid fa-language"></i>
+                <p class="raleway700 card__skill">Inglés</p>
+            </div>
+            
         </div>
     </section>
     <section class="softSkills" id="softSkills">
@@ -123,6 +131,14 @@
                 <i class="card__icon--soft fa-solid fa-people-group"></i>
                 <p class="raleway700 card__skill">Trabajo en equipo</p>
             </div>
+            <div class="skills__card">
+                <i class="card__icon--soft fa-solid fa-ear-listen"></i>
+                <p class="raleway700 card__skill">Escucha activa</p>
+            </div>
+            <div class="skills__card">
+                <i class="card__icon--soft fa-solid fa-circle-user"></i>
+                <p class="raleway700 card__skill">Fuerte ética de trabajo</p>
+            </div>
     </section>
     <section class="hobbies" id="hobbies">
         <h2 class="raleway700 skills__subtítulo">Hobbies</h2>
@@ -143,29 +159,39 @@
                 <i class="card__icon--hobby fa-solid fa-person-swimming"></i>
                 <p class="raleway700 card__skill">Natación</p>
             </div>
+            <div class="skills__card">
+                <i class="card__icon--hobby fa-solid fa-i-cursor"></i>
+                <p class="raleway700 card__skill">Escribir</p>
+            </div>
+            <div class="skills__card">
+                <i class="card__icon--hobby fa-solid fa-globe"></i>
+                <p class="raleway700 card__skill">Aprender otros lenguajes</p>
+            </div>
         </div>
     </section>
     <section class="formacion" id="formación">
         <h2 class="raleway700 formacion__subtítulo">Formación Académica</h2>
-        <div class="formacion__card">
-            <div class="card__logoContainer"><img class="logo__Alura" src="./logoAlura.png"></div>
-            <p class="raleway700 card__formacion">Full stack web developer (Java)</p>
-            <p class="raleway400 card__períodoEInstitución">2022 - Alura (Oracle Next Education)</p>
-        </div>
-        <div class="formacion__card">
-            <div class="card__logoContainer"><img class="logo__Silicon" src="./logoSilicon.png"></div>
-            <p class="raleway700 card__formacion">Full stack web developer<br> (React y NodeJS)</p>
-            <p class="raleway400 card__períodoEInstitución">2022 - Silicon Misiones</p>
-        </div>
-        <div class="formacion__card">
-            <div class="card__logoContainer"><img class="logo__ISPC" src="./logoISPC.png"></div>
-            <p class="raleway700 card__formacion">Full stack web developer<br> (Angular y C#)</p>
-            <p class="raleway400 card__períodoEInstitución">2021 - Instituto Superior<br> Politécnico Córdoba</p>
-        </div>
-        <div class="formacion__card">
-            <div class="card__logoContainer"><img class="logo__UNaM" src="./logoUNaM.png"></div>
-            <p class="raleway700 card__formacion">Licenciado en Letras</p>
-            <p class="raleway400 card__períodoEInstitución">2017 - Universidad Nacional<br> de Misiones</p>
+        <div class="formaciónContainer">
+            <div class="formacion__card">
+                <div class="card__logoContainer"><img class="logo__Alura" src="./logoAlura.png"></div>
+                <p class="raleway700 card__formacion">Full stack web developer (Java)</p>
+                <p class="raleway400 card__períodoEInstitución">2022 - Alura (Oracle Next Education)</p>
+            </div>
+            <div class="formacion__card">
+                <div class="card__logoContainer"><img class="logo__Silicon" src="./logoSilicon.png"></div>
+                <p class="raleway700 card__formacion">Full stack web developer<br> (React y NodeJS)</p>
+                <p class="raleway400 card__períodoEInstitución">2022 - Silicon Misiones</p>
+            </div>
+            <div class="formacion__card">
+                <div class="card__logoContainer"><img class="logo__ISPC" src="./logoISPC.png"></div>
+                <p class="raleway700 card__formacion">Full stack web developer<br> (Angular y C#)</p>
+                <p class="raleway400 card__períodoEInstitución">2021 - Instituto Superior<br> Politécnico Córdoba</p>
+            </div>
+            <div class="formacion__card">
+                <div class="card__logoContainer"><img class="logo__UNaM" src="./logoUNaM.png"></div>
+                <p class="raleway700 card__formacion">Licenciado en Letras</p>
+                <p class="raleway400 card__períodoEInstitución">2017 - Universidad Nacional<br> de Misiones</p>
+            </div>
         </div>
     </section>
     <section class="proyectos" id="proyectos">
@@ -230,5 +256,6 @@
     </footer>
 
     <script src="./validations.js"></script>
+    <script src="./scroller.js"></script>
 </body>
 </html>

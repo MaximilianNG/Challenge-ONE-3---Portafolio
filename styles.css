@@ -1,3 +1,9 @@
+/*Soy consciente de que este CSS no debería estar ordenado así y debería ser 
+fragmento en varios archivos, y que el
+proyecto podría tener las imágenes en una carpeta asset, entre otras cosas.
+La próxima lo hago bien, lo prometo (?), en este caso aprendí la buena práctica
+medio tarde.*/
+
 .raleway700 {
   font-family: 'Raleway';
   font-style: normal;
@@ -21,9 +27,7 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: #00BAF0;
-    background: linear-gradient(to left, black, #EAF2FD);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: #F5F5F5;
     color: black;
     height: 50px;
     padding: 1em;
@@ -62,7 +66,7 @@ a {
   .menu-button::before,
   .menu-button::after {
     display: block;
-    background-color: #fff;
+    background-color: black;
     position: absolute;
     height: 4px;
     width: 30px;
@@ -94,7 +98,7 @@ a {
     transform: rotate(-405deg);
   }
   
-  @media (max-width: 700px) {
+  @media (max-width: 600px) {
     .menu-button-container {
       display: flex;
     }
@@ -146,6 +150,14 @@ a {
 }
 
 .sobreMí__síntesis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0.6rem;
+  gap: 0.5rem;
+}
+
+.sobreMí__síntesis2 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -244,6 +256,10 @@ a {
   width: 45vw;
   padding: 3rem 1rem 0.4rem 1.5rem;
   flex-basis: 35vw;
+}
+
+.skills__card--backup {
+  display: none;
 }
 
 .card__icon {
@@ -519,4 +535,5 @@ a {
 .footer {
   text-align: center;
   background-color:#F5F5F5;
+  padding: 1rem 0;
 }

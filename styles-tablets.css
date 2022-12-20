@@ -1,0 +1,85 @@
+/*MEDIA QUERIES*/
+
+@media only screen and (min-width: 600px) {
+
+    a {
+        color: black;
+      }
+
+    .sobreMí__síntesis {
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      padding: 0.2rem;
+    }
+  
+    .síntesis__textoYLinks {
+      max-width: 70vw;
+    }
+  
+    .links {
+      display: flex;
+      flex-direction: row;
+      gap: 3.5rem;
+      max-width: fit-content;
+      font-size: 1rem;
+      justify-content: space-around;
+      text-shadow: 0 0 0.3em rgb(199, 182, 97);
+      padding-top: 0.5rem;
+    }
+  
+    .fotoDePerfil {
+      max-width: 22vw;
+      max-height: 20vh;
+      align-self: center;
+    }
+  
+    /*SECTOR DE SKILLS*/
+  
+    .skills__cardsContainer {
+      display: flex;
+      flex-wrap: wrap;
+      width: 96vw;
+      justify-content: space-evenly;
+      row-gap: 1.7rem;
+      column-gap: 0.4rem;
+    }
+    
+    .skills__card {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      background-color: white;
+      width: 30vw;
+      padding: 3rem 1rem 0.4rem 1.5rem;
+      flex-basis: 22vw;
+    }
+  
+    .skills__card--backup {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      background-color: white;
+      width: 45vw;
+      padding: 3rem 1rem 0.4rem 1.5rem;
+      flex-basis: 22vw;
+    }
+
+    /*SECTOR DE FORMACIÓN*/
+      .formaciónContainer {
+          display: flex;
+          flex-direction: row;
+          gap: 1rem;
+          flex-wrap: wrap;
+          justify-content: center;
+      }
+      
+      .card__logoContainer {
+        min-width: 40vw;
+        max-width: 40vw;
+        min-height: 7.3rem;
+        max-height: 7.3rem;
+        flex-basis: 45vw;
+      }
+}
